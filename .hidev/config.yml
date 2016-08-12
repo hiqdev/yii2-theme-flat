@@ -1,0 +1,10 @@
+package:
+    type:           yii2-extension
+    name:           yii2-theme-flat
+    title:          Flat Theme for hiqdev/yii2-thememanager
+    headline:       Yii2 Flat Theme
+    keywords:       flat, theme, extension, yii2
+    namespace:      hiqdev\themes\flat
+    description:    |
+        This package provides [Flat theme](https://shapebootstrap.net/item/1524965-flat-theme-free-responsive-multipurpose-site-template/comments)
+        for [Yii2 framework](http://yiiframework.com).
