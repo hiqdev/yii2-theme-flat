@@ -13,7 +13,7 @@ return [
     'components' => [
         'themeManager' => [
             'flat' => [
-                'class' => \hiqdev\themes\flat\FlatTheme::class,
+                'class' => \hiqdev\themes\flat\Theme::class,
             ],
         ],
         'i18n' => [

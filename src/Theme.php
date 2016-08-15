@@ -5,13 +5,13 @@ namespace hiqdev\themes\flat;
 use Yii;
 
 /**
- * Class Theme
+ * Theme class.
  */
-class FlatTheme extends \hiqdev\thememanager\Theme
+class Theme extends \hiqdev\thememanager\Theme
 {
     public $label = 'Flat';
 
     public $assets = [
-        \hiqdev\themes\flat\FlatAsset::class,
+        Asset::class,
     ];
 }

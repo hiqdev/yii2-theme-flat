@@ -5,7 +5,7 @@ namespace hiqdev\themes\flat;
 /**
  * Theme main asset bundle.
  */
-class FlatAsset extends \yii\web\AssetBundle
+class Asset extends \yii\web\AssetBundle
 {
     /**
      * @inheritdoc
@@ -27,7 +27,7 @@ class FlatAsset extends \yii\web\AssetBundle
      * @inheritdoc
      */
     public $depends = [
-        'yii\bootstrap\BootstrapAsset',
-        'yii\bootstrap\BootstrapPluginAsset'
+        \yii\bootstrap\BootstrapAsset::class,
+        \yii\bootstrap\BootstrapPluginAsset::class,
     ];
 }
