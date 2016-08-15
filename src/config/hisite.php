@@ -18,7 +18,7 @@ return [
         ],
         'i18n' => [
             'translations' => [
-                'flat' => [
+                'hiqdev/themes/flat' => [
                     'class' => \yii\i18n\PhpMessageSource::class,
                     'basePath' => '@hiqdev/themes/flat/messages',
                     'fileMap' => [
