@@ -4,7 +4,6 @@
  * Head layout.
  */
 
-use hiqdev\themes\flat\Asset;
 use yii\helpers\Html;
 use yii\helpers\Url;
 
@@ -16,7 +15,8 @@ use yii\helpers\Url;
     <script src="js/respond.min.js"></script>
     <![endif]-->
 <?php $this->head();
-Asset::register($this);
+
+Yii::$app->get('themeManager')->registerAssets();
 
 $this->registerMetaTag(
     [
