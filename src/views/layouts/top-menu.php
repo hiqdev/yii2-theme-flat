@@ -20,16 +20,16 @@ echo Menu::widget(
             ],
             [
                 'label' => Yii::t('hiqdev/themes/flat', 'Contacts'),
-                'url' => ['/site/default/contacts']
+                'url' => ['/site/contacts']
             ],
             [
                 'label' => Yii::t('hiqdev/themes/flat', 'Sign In'),
-                'url' => ['/users/guest/login'],
+                'url' => ['/site/login'],
                 'visible' => Yii::$app->user->isGuest
             ],
             [
                 'label' => Yii::t('hiqdev/themes/flat', 'Sign Up'),
-                'url' => ['/users/guest/signup'],
+                'url' => ['/site/signup'],
                 'visible' => Yii::$app->user->isGuest
             ],
             [
@@ -54,7 +54,7 @@ echo Menu::widget(
             ],
             [
                 'label' => Yii::t('hiqdev/themes/flat', 'Sign Out'),
-                'url' => ['/users/user/logout'],
+                'url' => ['/site/logout'],
                 'visible' => !Yii::$app->user->isGuest
             ]
         ]
