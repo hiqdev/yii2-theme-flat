@@ -1,3 +1,7 @@
-.width-50 {
-    width: 50px;
+.navbar-brand {
+    height: 100%;
+}
+
+.navbar-brand > img {
+    display: inline;
 }

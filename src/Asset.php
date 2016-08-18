@@ -1,11 +1,14 @@
 <?php
 
 namespace hiqdev\themes\flat;
+use yii\bootstrap\BootstrapAsset;
+use yii\bootstrap\BootstrapPluginAsset;
+use yii\web\AssetBundle;
 
 /**
  * Theme main asset bundle.
  */
-class Asset extends \yii\web\AssetBundle
+class Asset extends AssetBundle
 {
     /**
      * @inheritdoc
@@ -17,17 +20,23 @@ class Asset extends \yii\web\AssetBundle
      */
     public $css = [
         'css/font-awesome.min.css',
+        'css/prettyPhoto.css',
+        'css/animate.css',
         'css/main.css',
-        'css/custom.css'
+        'css/custom.css',
     ];
 
-    public $js = [];
+    public $js = [
+        'js/jquery.prettyPhoto.js',
+        'main.js',
+    ];
 
     /**
      * @inheritdoc
      */
     public $depends = [
-        \yii\bootstrap\BootstrapAsset::class,
-        \yii\bootstrap\BootstrapPluginAsset::class,
+        IEFixAsset::class,
+        BootstrapAsset::class,
+        BootstrapPluginAsset::class,
     ];
 }

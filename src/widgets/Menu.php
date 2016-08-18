@@ -52,8 +52,8 @@ class Menu extends \yii\widgets\Menu
             $menu = $this->renderItem($item);
             if (!empty($item['items'])) {
                 $menu .= strtr($this->submenuTemplate, [
-                        '{items}' => $this->renderItems($item['items']),
-                    ]);
+                    '{items}' => $this->renderItems($item['items']),
+                ]);
             }
 
             $lines[] = Html::tag($tag, $menu, $options);

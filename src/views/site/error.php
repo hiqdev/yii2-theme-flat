@@ -1,20 +1,10 @@
 <?php
 
-/**
- * Error view.
- *
- * @var yii\base\View $this View
- * @var string $name Error name
- * @var string $message Error message
- * @var Exception $exception Exception
- */
-
 use yii\helpers\Html;
 
-$this->title = $name; ?>
-<div class="site-error">
-    <h1><?php echo Html::encode($this->title); ?></h1>
-	<div class="alert alert-danger">
-		<?php echo nl2br(Html::encode($message)); ?>
-	</div>
-</div>
+$this->title = $name;
+$this->params['contentId'] = 'error';
+?>
+<h1><?= Html::encode($this->title); ?></h1>
+<p><?= nl2br(Html::encode($message)); ?></p>
+<?= Html::a(Yii::t('hiqdev/themes/flat', 'GO BACK TO THE HOMEPAGE'), Yii::$app->request->hostInfo, ['class' => 'btn btn-success']) ?>
