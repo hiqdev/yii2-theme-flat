@@ -8,17 +8,18 @@
  */
 
 use hiqdev\themes\flat\widgets\Alert;
+use hiqdev\themes\flat\widgets\Menu;
 use yii\widgets\Breadcrumbs;
 
 ?>
-<?php $this->beginPage(); ?>
+<?php $this->beginPage() ?>
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
 <head>
     <?= $this->render('//layouts/head') ?>
 </head>
 <body>
-<?php $this->beginBody(); ?>
+<?php $this->beginBody() ?>
 
 <header class="navbar navbar-inverse navbar-fixed-top wet-asphalt" role="banner">
     <div class="container">
@@ -32,11 +33,13 @@ use yii\widgets\Breadcrumbs;
             <a class="navbar-brand" href="<?= Yii::$app->homeUrl ?>"><img src="<?= Yii::$app->assetManager->publish('@hiqdev/themes/flat/assets/images/logo.png')[1] ?>"></a>
         </div>
         <div class="collapse navbar-collapse">
-            <?= $this->render('//layouts/top-menu') ?>
+            <?= Yii::$app->get('menuManager')->render('main', [
+                'class'   => Menu::class,
+                'options' => ['class' => 'nav navbar-nav navbar-right'],
+            ]) ?>
         </div>
     </div>
 </header>
-<!--/header-->
 
 <?php if (!isset($this->params['noTitle'])) : ?>
     <section id="title" class="emerald">
@@ -46,34 +49,28 @@ use yii\widgets\Breadcrumbs;
                     <h1><?= $this->title ?></h1>
                     <?php if (isset($this->params['subtitle'])) : ?>
                         <p><?= $this->params['subtitle'] ?></p>
-                    <?php endif; ?>
+                    <?php endif ?>
                 </div>
                 <div class="col-sm-6">
-                    <?=
-                    Breadcrumbs::widget(
-                        [
-                            'options' => [
-                                'class' => 'breadcrumb pull-right'
-                            ],
-                            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : []
-                        ]
-                    ) ?>
+                    <?= Breadcrumbs::widget([
+                        'options' => ['class' => 'breadcrumb pull-right'],
+                        'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : []
+                    ]) ?>
                 </div>
             </div>
         </div>
     </section><!--/#title-->
-<?php endif; ?>
+<?php endif ?>
 
-<?= Alert::widget(); ?>
+<?= Alert::widget() ?>
 
-
-<?php /* Check front page of the site */ if ($this->context->id !== 'site' || $this->context->action->id !== 'index') : ?>
-<section id="<?= isset($this->params['contentId']) ? $this->params['contentId'] : 'content' ?>" class="container">
+<?php if (Yii::$app->themeManager->isHomePage()) : ?>
     <?= $content ?>
-</section>
 <?php else: ?>
-    <?= $content ?>
-<?php endif; ?>
+    <section id="<?= isset($this->params['contentId']) ? $this->params['contentId'] : 'content' ?>" class="container">
+        <?= $content ?>
+    </section>
+<?php endif ?>
 
 <footer id="footer" class="midnight-blue">
     <div class="container">
@@ -82,14 +79,16 @@ use yii\widgets\Breadcrumbs;
                 &copy; 2014 <?= Yii::$app->name ?>. <?= Yii::t('hiqdev/themes/flat', 'All Rights Reserved') ?>.
             </div>
             <div class="col-sm-6">
-                <?= $this->render('//layouts/top-menu', ['footer' => true]) ?>
+                <?= Yii::$app->get('menuManager')->render('main', [
+                    'class'   => Menu::class,
+                    'options' => ['class' => 'navbar-right'],
+                ]) ?>
             </div>
         </div>
     </div>
-</footer>
-<!--/#footer-->
+</footer><!--/#footer-->
 
-<?php $this->endBody(); ?>
+<?php $this->endBody() ?>
 </body>
 </html>
-<?php $this->endPage(); ?>
+<?php $this->endPage() ?>
