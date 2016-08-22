@@ -30,7 +30,7 @@ use yii\widgets\Breadcrumbs;
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="<?= Yii::$app->homeUrl ?>"><img src="<?= Yii::$app->assetManager->publish('@hiqdev/themes/flat/assets/images/logo.png')[1] ?>"></a>
+            <a class="navbar-brand" href="<?= Yii::$app->homeUrl ?>"><?= Yii::$app->name ?></a>
         </div>
         <div class="collapse navbar-collapse">
             <?= Yii::$app->get('menuManager')->render('main', [
