@@ -76,7 +76,7 @@ use yii\widgets\Breadcrumbs;
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-                &copy; 2014 <?= Yii::$app->name ?>. <?= Yii::t('hiqdev/themes/flat', 'All Rights Reserved') ?>.
+                &copy; <?= date('Y') ?> <?= Yii::$app->params['orgName'] ?>. <?= Yii::t('hiqdev/themes/flat', 'All Rights Reserved') ?>.
             </div>
             <div class="col-sm-6">
                 <?= Yii::$app->get('menuManager')->render('main', [
