@@ -7,7 +7,6 @@
  * @var string $content Content
  */
 
-use hiqdev\themes\flat\widgets\Alert;
 use hiqdev\themes\flat\widgets\Menu;
 use yii\widgets\Breadcrumbs;
 
@@ -62,7 +61,9 @@ use yii\widgets\Breadcrumbs;
     </section><!--/#title-->
 <?php endif ?>
 
-<?= Alert::widget() ?>
+<?php if (Yii::$app->themeManager->hasWidget('Flashes')) : ?>
+    <?= Yii::$app->themeManager->widget('Flashes') ?>
+<?php endif ?>
 
 <?php if (Yii::$app->themeManager->isHomePage()) : ?>
     <?= $content ?>
