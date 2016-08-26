@@ -77,7 +77,7 @@ use yii\widgets\Breadcrumbs;
         <div class="row">
             <div class="col-sm-6">
                 &copy; <?= Yii::$app->themeManager->widget('CopyrightYears') ?> <?= Yii::$app->themeManager->widget('OrganizationLink') ?>
-                <?= Yii::t('hiqdev/themes/twentyfifteen', 'All rights reserved.') ?>
+                <?= Yii::t('hiqdev/themes/flat', 'All rights reserved.') ?>
             </div>
             <div class="col-sm-6">
                 <?= Yii::$app->get('menuManager')->render('main', [
