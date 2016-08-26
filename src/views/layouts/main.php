@@ -8,7 +8,6 @@
  */
 
 use hiqdev\themes\flat\widgets\Menu;
-use yii\widgets\Breadcrumbs;
 
 ?>
 <?php $this->beginPage() ?>
@@ -51,7 +50,8 @@ use yii\widgets\Breadcrumbs;
                     <?php endif ?>
                 </div>
                 <div class="col-sm-6">
-                    <?= Breadcrumbs::widget([
+                    <?= Yii::$app->themeManager->widget([
+                        'class' => 'Breadcrumbs',
                         'options' => ['class' => 'breadcrumb pull-right'],
                         'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : []
                     ]) ?>
