@@ -8,6 +8,7 @@ Yii2 Flat Theme
 [![Build Status](https://img.shields.io/travis/hiqdev/yii2-theme-flat.svg)](https://travis-ci.org/hiqdev/yii2-theme-flat)
 [![Scrutinizer Code Coverage](https://img.shields.io/scrutinizer/coverage/g/hiqdev/yii2-theme-flat.svg)](https://scrutinizer-ci.com/g/hiqdev/yii2-theme-flat/)
 [![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/hiqdev/yii2-theme-flat.svg)](https://scrutinizer-ci.com/g/hiqdev/yii2-theme-flat/)
+[![Dependency Status](https://www.versioneye.com/php/hiqdev:yii2-theme-flat/dev-master/badge.svg)](https://www.versioneye.com/php/hiqdev:yii2-theme-flat/dev-master)
 
 This package provides [Flat theme](https://shapebootstrap.net/item/1524965-flat-theme-free-responsive-multipurpose-site-template/comments)
 for [Yii2 framework](http://yiiframework.com).
@@ -35,4 +36,4 @@ to the require section of your composer.json.
 This project is released under the terms of the BSD-3-Clause [license](LICENSE).
 Read more [here](http://choosealicense.com/licenses/bsd-3-clause).
 
-Copyright © 2014-2016, HiQDev (http://hiqdev.com/)
+Copyright © 2016, HiQDev (http://hiqdev.com/)
