@@ -8,9 +8,11 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 
 ?>
-<title><?= Html::encode($this->title); ?></title>
-<?= Html::csrfMetaTags(); ?>
-<?php $this->head();
+<title><?= Html::encode($this->title) ?></title>
+<?= Html::csrfMetaTags() ?>
+<?php
+
+$this->head();
 
 Yii::$app->get('themeManager')->registerAssets();
 
@@ -63,4 +65,4 @@ $this->registerLinkTag(
         'rel' => 'apple-touch-icon-precomposed',
         'href' => Yii::$app->assetManager->publish('@hiqdev/themes/flat/assets/images/ico/apple-touch-icon-57-precomposed.png')[1]
     ]
-); ?>
+);
