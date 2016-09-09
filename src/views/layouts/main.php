@@ -3,10 +3,9 @@
 /**
  * Theme main layout.
  *
- * @var \yii\web\View $this View
+ * @var \yii\web\View View
  * @var string $content Content
  */
-
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>

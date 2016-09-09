@@ -3,12 +3,11 @@
 /**
  * Errors page view.
  *
- * @var yii\web\View $this View
+ * @var yii\web\View View
  * @var string $name Name
  * @var string $message Message
  * @var Exception $exception Exception
  */
-
 use yii\helpers\Html;
 
 $this->title = $name;

@@ -12,7 +12,7 @@ use hiqdev\themes\flat\widgets\Menu;
             </div>
             <div class="col-sm-6">
                 <?= Yii::$app->get('menuManager')->render('main', [
-                    'class'   => Menu::class,
+                    'class' => Menu::class,
                     'options' => ['class' => 'navbar-right'],
                 ]) ?>
             </div>

@@ -1,12 +1,12 @@
 <?php
 
 /*
- * AdminLte Theme for hiqdev/yii2-thememanager
+ * Flat Theme for hiqdev/yii2-thememanager
  *
  * @link      https://github.com/hiqdev/yii2-theme-flat
  * @package   yii2-theme-flat
  * @license   BSD-3-Clause
- * @copyright Copyright (c) 2015-2016, HiQDev (http://hiqdev.com/)
+ * @copyright Copyright (c) 2016, HiQDev (http://hiqdev.com/)
  */
 
 return [

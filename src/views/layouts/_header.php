@@ -16,7 +16,7 @@ use hiqdev\themes\flat\widgets\Menu;
         </div>
         <div class="collapse navbar-collapse">
             <?= Yii::$app->get('menuManager')->render('main', [
-                'class'   => Menu::class,
+                'class' => Menu::class,
                 'options' => ['class' => 'nav navbar-nav navbar-right'],
             ]) ?>
         </div>
@@ -37,7 +37,7 @@ use hiqdev\themes\flat\widgets\Menu;
                     <?= Yii::$app->themeManager->widget([
                         'class' => 'Breadcrumbs',
                         'options' => ['class' => 'breadcrumb pull-right'],
-                        'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : []
+                        'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
                     ]) ?>
                 </div>
             </div>

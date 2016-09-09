@@ -1,25 +1,31 @@
 <?php
 
+/*
+ * Flat Theme for hiqdev/yii2-thememanager
+ *
+ * @link      https://github.com/hiqdev/yii2-theme-flat
+ * @package   yii2-theme-flat
+ * @license   BSD-3-Clause
+ * @copyright Copyright (c) 2016, HiQDev (http://hiqdev.com/)
+ */
+
 namespace hiqdev\themes\flat\widgets;
 
 use yii\helpers\ArrayHelper;
-use yii\helpers\Url;
 use yii\helpers\Html;
 
 /**
- * Class Menu
- * @package frontend\themes\site\widgets
- * Theme menu widget.
+ * Class Menu.
  */
 class Menu extends \yii\widgets\Menu
 {
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public $submenuTemplate = "\n<ul class='dropdown-menu'>\n{items}\n</ul>\n";
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     protected function renderItems($items)
     {

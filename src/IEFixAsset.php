@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * Flat Theme for hiqdev/yii2-thememanager
+ *
+ * @link      https://github.com/hiqdev/yii2-theme-flat
+ * @package   yii2-theme-flat
+ * @license   BSD-3-Clause
+ * @copyright Copyright (c) 2016, HiQDev (http://hiqdev.com/)
+ */
+
 namespace hiqdev\themes\flat;
 
 use yii\web\AssetBundle;
@@ -8,7 +17,7 @@ use yii\web\View;
 class IEFixAsset extends AssetBundle
 {
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public $sourcePath = '@hiqdev/themes/flat/assets';
 
@@ -19,6 +28,6 @@ class IEFixAsset extends AssetBundle
 
     public $jsOptions = [
         'condition' => 'lte IE9',
-        'position' => View::POS_HEAD
+        'position' => View::POS_HEAD,
     ];
 }
