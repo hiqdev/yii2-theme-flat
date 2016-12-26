@@ -1,6 +1,8 @@
 <?php
 
+use hiqdev\thememanager\menus\AbstractMainMenu;
 use hiqdev\themes\flat\widgets\Menu;
+use yii\widgets\Breadcrumbs;
 
 ?>
 <header class="navbar navbar-inverse navbar-fixed-top wet-asphalt" role="banner">
@@ -15,7 +17,7 @@ use hiqdev\themes\flat\widgets\Menu;
             <a class="navbar-brand" href="<?= Yii::$app->homeUrl ?>"><?= Yii::$app->name ?></a>
         </div>
         <div class="collapse navbar-collapse">
-            <?= Yii::$app->get('menuManager')->render('main', [
+            <?= AbstractMainMenu::widget([], [
                 'class' => Menu::class,
                 'options' => ['class' => 'nav navbar-nav navbar-right'],
             ]) ?>
@@ -34,7 +36,7 @@ use hiqdev\themes\flat\widgets\Menu;
                     <?php endif ?>
                 </div>
                 <div class="col-sm-6">
-                    <?= Yii::$app->themeManager->widget([
+                    <?= Breadcrumbs::widget([
                         'class' => 'Breadcrumbs',
                         'options' => ['class' => 'breadcrumb pull-right'],
                         'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
