@@ -10,7 +10,7 @@
  */
 
 return [
-    'languages' => ['de', 'ru'],
+    'languages' => ['ru'],
     'sourcePath' => dirname(__DIR__),
     'messagePath' => __DIR__,
 ];
