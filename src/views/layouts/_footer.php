@@ -1,5 +1,8 @@
 <?php
 
+use hiqdev\thememanager\menus\AbstractFooterMenu;
+use hiqdev\thememanager\widgets\CopyrightYears;
+use hiqdev\thememanager\widgets\OrganizationLink;
 use hiqdev\themes\flat\widgets\Menu;
 
 ?>
@@ -7,11 +10,11 @@ use hiqdev\themes\flat\widgets\Menu;
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-                &copy; <?= Yii::$app->themeManager->widget('CopyrightYears') ?> <?= Yii::$app->themeManager->widget('OrganizationLink') ?>.
+                &copy; <?= CopyrightYears::widget() ?>. <?= OrganizationLink::widget() ?>
                 <?= Yii::t('hiqdev/themes/flat', 'All rights reserved.') ?>
             </div>
             <div class="col-sm-6">
-                <?= Yii::$app->get('menuManager')->render('main', [
+                <?= AbstractFooterMenu::widget([], [
                     'class' => Menu::class,
                     'options' => ['class' => 'navbar-right'],
                 ]) ?>
