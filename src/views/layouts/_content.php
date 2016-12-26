@@ -1,6 +1,4 @@
-<?php if (Yii::$app->themeManager->hasWidget('Flashes')) : ?>
-    <?= Yii::$app->themeManager->widget('Flashes') ?>
-<?php endif ?>
+<?= \hiqdev\thememanager\widgets\Flashes::widget() ?>
 
 <?php if (Yii::$app->themeManager->isHomePage()) : ?>
     <?= $content ?>
