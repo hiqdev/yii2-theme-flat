@@ -14,5 +14,5 @@ $this->title = $name;
 $this->params['contentId'] = 'error'; ?>
 <h3><?php echo nl2br(Html::encode($message)); ?></h3>
 <a class="btn btn-success" href="<?= Yii::$app->homeUrl ?>">
-    <?= Yii::t('hiqdev/themes/flat', 'GO BACK TO THE HOMEPAGE') ?>
+    <?= Yii::t('hiqdev:themes:flat', 'GO BACK TO THE HOMEPAGE') ?>
 </a>
