@@ -18,6 +18,8 @@ class Theme extends \hiqdev\thememanager\Theme
 {
     public $label = 'Flat';
 
+    public $screenshot = '@hiqdev/themes/flat/assets/flat.png';
+
     public $assets = [
         Asset::class,
     ];
