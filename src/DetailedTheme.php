@@ -9,7 +9,7 @@
 namespace hiqdev\themes\flat;
 
 
-class DetailedTheme
+class DetailedTheme extends \hiqdev\thememanager\DetailedTheme
 {
     /**
      * @var array
