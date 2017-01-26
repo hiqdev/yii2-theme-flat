@@ -12,7 +12,7 @@ namespace hiqdev\themes\flat;
 class DetailedTheme extends \hiqdev\thememanager\DetailedTheme
 {
     /**
-     * @var array
+     * @var string
      */
-    public $type = ['site'];
+    public $type = 'site';
 }
