@@ -1,5 +1,4 @@
-Yii2 Flat Theme
-===============
+# Yii2 Flat Theme
 
 **Flat Theme for hiqdev/yii2-thememanager**
 
