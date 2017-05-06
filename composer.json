@@ -1,7 +1,7 @@
 {
     "name": "hiqdev/yii2-theme-flat",
     "type": "yii2-extension",
-    "description": "Flat Theme for hiqdev/yii2-thememanager",
+    "description": "Flat Theme for Yii2 projects",
     "keywords": [
         "flat",
         "theme",

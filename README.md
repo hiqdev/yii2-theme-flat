@@ -1,6 +1,6 @@
 # Yii2 Flat Theme
 
-**Flat Theme for hiqdev/yii2-thememanager**
+**Flat Theme for Yii2 projects**
 
 [![Latest Stable Version](https://poser.pugx.org/hiqdev/yii2-theme-flat/v/stable)](https://packagist.org/packages/hiqdev/yii2-theme-flat)
 [![Total Downloads](https://poser.pugx.org/hiqdev/yii2-theme-flat/downloads)](https://packagist.org/packages/hiqdev/yii2-theme-flat)
@@ -9,8 +9,13 @@
 [![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/hiqdev/yii2-theme-flat.svg)](https://scrutinizer-ci.com/g/hiqdev/yii2-theme-flat/)
 [![Dependency Status](https://www.versioneye.com/php/hiqdev:yii2-theme-flat/dev-master/badge.svg)](https://www.versioneye.com/php/hiqdev:yii2-theme-flat/dev-master)
 
-This package provides [Flat theme](https://shapebootstrap.net/item/1524965-flat-theme-free-responsive-multipurpose-site-template/comments)
-for [Yii2 framework](http://yiiframework.com).
+This package provides pluggable [Flat theme] for [Yii2] projects.
+
+This package uses [hiqdev/yii2-thememanager] theming library.
+
+[flat theme]:   https://shapebootstrap.net/item/1524965-flat-theme-free-responsive-multipurpose-site-template/comments
+[yii2]:         http://yiiframework.com/
+[hiqdev/yii2-thememanager]: https://github.com/hiqdev/yii2-thememanager
 
 ## Installation
 
