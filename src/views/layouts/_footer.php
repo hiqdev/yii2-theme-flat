@@ -10,7 +10,7 @@ use hiqdev\themes\flat\widgets\Menu;
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-                &copy; <?= CopyrightYears::widget() ?>. <?= OrganizationLink::widget() ?>
+                &copy; <?= CopyrightYears::widget() ?> <?= OrganizationLink::widget() ?>.
                 <?= Yii::t('hiqdev:themes:flat', 'All rights reserved.') ?>
             </div>
             <div class="col-sm-6">
