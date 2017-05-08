@@ -28,7 +28,6 @@ class Asset extends AssetBundle
      * {@inheritdoc}
      */
     public $css = [
-        'css/font-awesome.min.css',
         'css/prettyPhoto.css',
         'css/animate.css',
         'css/main.css',
@@ -36,6 +35,7 @@ class Asset extends AssetBundle
     ];
 
     public $js = [
+        'https://use.fontawesome.com/483397b330.js',
         'js/jquery.prettyPhoto.js',
         'js/main.js',
     ];
