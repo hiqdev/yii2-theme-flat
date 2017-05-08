@@ -37,7 +37,7 @@ class Asset extends AssetBundle
 
     public $js = [
         'js/jquery.prettyPhoto.js',
-        'main.js',
+        'js/main.js',
     ];
 
     /**
