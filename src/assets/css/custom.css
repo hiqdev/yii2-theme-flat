@@ -5,3 +5,12 @@
 .navbar-brand > img {
     display: inline;
 }
+
+.icon-md {
+    font: normal normal normal 30px/68px FontAwesome !important;
+    display: block !important;
+}
+
+section a, section a:hover, section a:active, section a:focus {
+    text-decoration: underline;
+}
