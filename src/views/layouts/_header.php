@@ -1,28 +1,29 @@
 <?php
 
-use hiqdev\thememanager\menus\AbstractMainMenu;
-use hiqdev\themes\flat\widgets\Menu;
+use hiqdev\thememanager\menus\AbstractNavbarMenu;
+
+use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 
 ?>
-<header class="navbar navbar-inverse navbar-fixed-top wet-asphalt" role="banner">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only"><?= Yii::t('hiqdev:themes:flat', 'Toggle navigation') ?></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="<?= Yii::$app->homeUrl ?>"><?= Yii::$app->name ?></a>
-        </div>
-        <div class="collapse navbar-collapse">
-            <?= AbstractMainMenu::widget([], [
-                'class' => Menu::class,
-                'options' => ['class' => 'nav navbar-nav navbar-right'],
-            ]) ?>
-        </div>
-    </div>
+<header class="navbar" role="banner">
+    <?php NavBar::begin([
+        'brandLabel' => Yii::$app->name,
+        'brandUrl' => Yii::$app->homeUrl,
+        'options' => [
+            'class' => 'navbar-inverse navbar-fixed-top wet-asphalt',
+        ],
+    ]) ?>
+        <?= AbstractNavbarMenu::widget([], [
+            'encodeLabels' => false,
+            'options' => [
+                'tag' => false,
+            ],
+            'itemOptions' => [
+                'tag' => false,
+            ],
+        ]) ?>
+    <?php NavBar::end() ?>
 </header>
 
 <?php if (!isset($this->params['noTitle'])) : ?>
