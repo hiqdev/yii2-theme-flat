@@ -6,12 +6,14 @@ use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 
 ?>
-<header class="navbar" role="banner">
+<header class="navbar navbar-inverse navbar-fixed-top wet-asphalt" role="banner">
     <?php NavBar::begin([
         'brandLabel' => Yii::$app->name,
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top wet-asphalt',
+            'class' => [
+                'widget' => '',
+            ],
         ],
     ]) ?>
         <?= AbstractNavbarMenu::widget([], [
