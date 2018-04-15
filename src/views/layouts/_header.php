@@ -1,7 +1,6 @@
 <?php
 
 use hiqdev\thememanager\menus\AbstractNavbarMenu;
-
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 
